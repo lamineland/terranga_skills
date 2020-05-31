@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          TSE - Terranga Skills
         </a>
       </header>
     </div>
