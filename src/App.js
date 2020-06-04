@@ -5,7 +5,7 @@ import prefab3 from './assets/prefab3.jpg';
 import { Container, Row, Col, Navbar, Nav, Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import { sizing } from '@material-ui/system';
-import Box from './components/box.component.js'
+import { Box } from '@material-ui/core'
 import './App.css';
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
   const stylish3 = {
     paddingTop: '20px',
     paddingLeft: '40px',
+    // height: '400px',
     // display: 'flex',
     // justifyContent: 'center',
     // alignItems: 'center'
@@ -49,14 +50,35 @@ function App() {
         <Container fluid style={stylish2}>
           <Row>
             <Col md={5} style={stylish3}>
-              <Box width="100%">
-                <Box widtht="25%" bgcolor="background.paper" my={1} p={1}>
+              <Box width="100%" my="auto">
+                <Box width={1 / 3} 
+                  display="flex" 
+                  // alignItems="flex-start" 
+                  justifyContent="center" 
+                  bgcolor="palevioletred" my={1} p={1} mx="auto"
+                  borderRadius={4}
+                  boxShadow={4}
+                  fontWeight="fontWeightBold" color="white">
                   DEV 
                 </Box>
-                <Box widtht="50%" bgcolor="background.paper" my={1} p={1}>
+                <Box width={1/3} 
+                  display="flex" 
+                  // alignItems="flex-end" 
+                  justifyContent="center" 
+                  bgcolor="palevioletred" my={1} p={1} mx="auto"
+                  borderRadius={4} 
+                  boxShadow={4}
+                  fontWeight="fontWeightBold" color="white">
                   ARCHI 
                 </Box>
-                <Box widtht="25%" bgcolor="background.paper" my={1} p={1}>
+                <Box width={1/3} 
+                  display="flex" 
+                  // alignItems="center" 
+                  justifyContent="center" 
+                  bgcolor="palevioletred" my={1} p={1} mx="auto"
+                  borderRadius={4}
+                  boxShadow={4}
+                  fontWeight="fontWeightBold" color="white">
                   DOSTARS 
                 </Box>
               </Box>
